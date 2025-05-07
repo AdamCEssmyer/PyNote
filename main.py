@@ -19,6 +19,15 @@ def main_menu():
     def random_CIN(length: int) -> str:
         result_CIN = ''.join(random.choices(string.digits, k=length));
         return result_CIN;
+
+        def create_console():
+            print("Input new debtor database\n")
+
+            while True:
+                cin = random_CIN(8)
+                if not is_duplicate_cin(cin):
+                    break;
+
     
     
     
