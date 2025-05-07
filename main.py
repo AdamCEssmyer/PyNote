@@ -12,3 +12,16 @@ def main_menu():
     print("2. Add a new task")
     print("3. Exit")
     choice = input("Enter your choice: ")
+
+    import random
+    import string
+
+    def random_CIN(length: int) -> str:
+        result_CIN = ''.join(random.choices(string.digits, k=length));
+        return result_CIN;
+    
+    
+    
+    
+    
+    
