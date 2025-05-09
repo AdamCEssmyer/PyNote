@@ -1,5 +1,7 @@
 import os
 import database
+import random
+import string
 
 def main_menu():
     global clear_needed
@@ -15,8 +17,9 @@ def main_menu():
     print("3. Exit")
     choice = input("Enter your choice: ")
 
-    import random
-    import string
+    
+
+    # 8 digit random number generator for CIN key
 
     def random_CIN(length: int) -> str:
         result_CIN = ''.join(random.choices(string.digits, k=length));
